@@ -25,7 +25,7 @@ pipeline {
                 bat "docker rm -f gateway-container"
                 bat "docker rmi -f gateway-image"
                 bat "docker build -t gateway-image ."
-                bat "docker run -p 8090:8090 -d --name gateway-container gateway-image"
+                bat "docker run -p 8060:8060 -d --name gateway-container gateway-image"
             }
         }
     }
